@@ -38,7 +38,7 @@ The plugin is enabled by default.
 
 ## Roadmap
 
-- Make it possible to use the [pandoc server] mode, resulting in even speedier parsing and also making exec() permission optional.
+- Make it possible to use the [pandoc server](https://github.com/jgm/pandoc/blob/main/doc/pandoc-server.md) mode, resulting in even speedier parsing and also making exec() permission optional.
 - The UID in the vendor/composer was taken from [markdown-notices](https://github.com/getgrav/grav-plugin-markdown-notices) and had the last digit (0) changed (to 2). Maybe do it in a more proper way.
 
 ## Warning
