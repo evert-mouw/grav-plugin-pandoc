@@ -1,0 +1,38 @@
+name: Pandoc
+type: plugin
+slug: pandoc
+version: 0.0.1
+description: Add Pandoc rendering of Markdown using an external pandoc binary.
+icon: asterisk
+author:
+  name: Evert Mouw
+  email: post@evert.net
+  url: https://www.evertmouw.nl
+homepage: https://www.evertmouw.nl
+keywords:
+  - pandoc
+  - markdown
+docs: https://github.com/evert-mouw/grav-plugin-pandoc
+license: MIT
+dependencies:
+  - { name: grav, version: '>=1.6.0' }
+
+form:
+  validation: strict
+  fields:
+    enabled:
+      type: toggle
+      label: PLUGIN_ADMIN.PLUGIN_STATUS
+      highlight: 1
+      default: 0
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+      validate:
+        type: bool
+    command:
+      type: text
+      label: command
+      default: "pandoc"
+      validate:
+        type: text

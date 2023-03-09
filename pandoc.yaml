@@ -1,0 +1,2 @@
+enabled: true
+command: "linkembed | pandoc -f markdown+autolink_bare_uris"
